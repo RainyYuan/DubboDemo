@@ -3,7 +3,6 @@ package com.alibaba.demo.dubbo;
 import com.alibaba.dubbo.demo.DemoService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import java.util.List;
 
 /**
  * @Author: YuanGuiyu
