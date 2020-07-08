@@ -12,8 +12,6 @@ import org.springframework.stereotype.Component;
 
 import java.io.UnsupportedEncodingException;
 
-
-@Component
 public class Consumer {
 
     Logger log = Logger.getLogger(Consumer.class);

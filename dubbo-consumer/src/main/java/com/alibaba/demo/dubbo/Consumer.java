@@ -1,6 +1,7 @@
 package com.alibaba.demo.dubbo;
 
 import com.alibaba.dubbo.demo.DemoService;
+import com.alibaba.dubbo.demo.MqSendService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
@@ -16,8 +17,8 @@ public class Consumer {
                 new ClassPathXmlApplicationContext("consumer.xml");
         context.start();
         System.out.println("consumer start");
-        DemoService demoService = context.getBean(DemoService.class);
+        MqSendService mqSendService = context.getBean(MqSendService.class);
         System.out.println("consumer");
-        System.out.println(demoService.getPermissions(1L));
+        System.out.println(mqSendService.callback(1L));
     }
 }

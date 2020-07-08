@@ -1,13 +1,13 @@
 package com.alibaba.mq;
 
 import mq.JmsConfig;
+import org.apache.log4j.Logger;
 import org.apache.rocketmq.client.exception.MQClientException;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.springframework.stereotype.Component;
 
-@Component
 public class Producer {
-
+    Logger log = Logger.getLogger(Producer.class);
     private String producerGroup = "test_producer";
     private DefaultMQProducer producer;
 
